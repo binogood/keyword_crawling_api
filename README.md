@@ -22,8 +22,9 @@ week_ranking = id, keyword_id, count, rank, date
 
 ## Examples
 - Today data API (ranking 10위까지만 출력이 됩니다.)
-```
+
 http://localhost:5000/rank/today
+```
 {
   "data": [
     {
@@ -57,6 +58,7 @@ http://localhost:5000/rank/today
 }
 ```
 - 전체 Ranking data API(일일, 주, 월(주 단위로 4번), 연(주단위로 52번)
+
 http://localhost:5000/rank/view
 ```
 {
