@@ -1,4 +1,6 @@
 # keyword_crawling_api
+![스크린샷, 2021-10-27 00-04-14](https://user-images.githubusercontent.com/67960152/138907060-b832086d-3791-457a-a069-f4c724f0f40e.png)
+
 
 ## Description
 네이버에서 view에서 특정 키워드를 가지고 크롤링한 데이터를 일, 주, 월, 연 랭킹을 구하는 API.
@@ -158,3 +160,7 @@ http://localhost:5000/rank/view
         
         ... 
 ```
+위 API를 받아 Ranking 홈페이지를 구현하면 최종적으로 상단에 있는 사진같은 홈페이지 제작이 가능합니다.
+
+저는 의류 키워드로 ranking을 구현하였습니다.
+
