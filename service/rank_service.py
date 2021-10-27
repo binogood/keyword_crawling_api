@@ -9,13 +9,8 @@ class RankService:
 
     def rank_today_service(self, date_info, connection):
         rank_dao = RankDao()
-        # rank_list = rank_dao.day_rank_dao(date_info ,connection)
-        
-        # return {'data': rank_list}
         today_rank = rank_dao.day_rank_dao(date_info ,connection)
-        print(today_rank)
         yesterday_rank = rank_dao.yesterday_rank_dao(date_info, connection)
-        print(yesterday_rank)
         for idx in range(len(today_rank)):
             if today_rank[idx]['name'] == yesterday_rank[idx]['name']:
                 today_rank[idx]['change'] = 0
@@ -30,8 +25,7 @@ class RankService:
                         break
                 if 'change' not in today_rank[idx]:
                     today_rank[idx]['change'] = 3
-        print(today_rank)
-        # today_rank_list = {'today':today_rank}
+                    
         return {'data':today_rank}
             
 
